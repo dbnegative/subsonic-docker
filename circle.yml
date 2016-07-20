@@ -1,6 +1,6 @@
 machine:
   environment:
-    PROJECT_NAME: kubernetes
+    PROJECT_NAME: kubernetes-1369
     CLUSTER_NAME: cluster-1-circleci
     CLOUDSDK_COMPUTE_ZONE: europe-west1-b
     DEBIAN_FRONTEND: noninteractive
