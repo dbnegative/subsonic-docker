@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: subsonic
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: subsonic
+    spec:
+      containers:
+      - name: subsonic
+        image: us.gcr.io/kubernetes-1369/subsonic:latest
+        ports:
+        - containerPort: 4040

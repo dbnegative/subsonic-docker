@@ -7,7 +7,8 @@ trap "echo TRAPed signal" HUP INT QUIT TERM
 # start service in background here
 /var/subsonic/standalone/subsonic.sh
 
-echo "[hit enter key to exit] or run 'docker stop <container>'"
+sleep 5
+
 read
 
 echo "exited $0"
